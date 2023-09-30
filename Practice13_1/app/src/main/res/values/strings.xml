@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practice13_1</string>
+    <string name="sides">Введите катеты треугольника:</string>
+    <string name="result1">Гипотенуза = </string>
+    <string name="result2">Периметр = </string>
+    <string name="result3">Площадь = </string>
+    <string name="side1">1-ый катет</string>
+    <string name="side2">2-ой катет</string>
+    <string name="change">Вычислить</string>
+    <string name="toast1">Введите 1-ый катет!</string>
+    <string name="toast2">Введите 2-ой катет!</string>
+</resources>
