@@ -9,4 +9,5 @@
     <string name="change">Вычислить</string>
     <string name="toast1">Введите 1-ый катет!</string>
     <string name="toast2">Введите 2-ой катет!</string>
+    <string name="toast3">Катеты не должны быть равны 0!</string>
 </resources>

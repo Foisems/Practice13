@@ -34,16 +34,20 @@ class MainActivity : AppCompatActivity() {
             toast.show()
             side2.requestFocus()
         }
+        else if (side1.text.toString() == "0" || side2.text.toString() == "0") {
+            val toast: Toast = Toast.makeText(baseContext, R.string.toast3, Toast.LENGTH_SHORT)
+            toast.show()
+        }
         else {
             res1 = round((Math.sqrt(Math.pow(side1.text.toString().toDouble(), 2.0) + Math.pow(side2.text.toString().toDouble(), 2.0))) * 100) / 100
             result1.text =
                 if (res1.toInt().toDouble() == res1) res1.toInt().toString()
                 else res1.toString()
-            res2 = res1 + side1.text.toString().toDouble() + side2.text.toString().toDouble()
+            res2 = round(res1 + side1.text.toString().toDouble() + side2.text.toString().toDouble()* 100) / 100
             result2.text =
                 if (res2.toInt().toDouble() == res2) res2.toInt().toString()
                 else res2.toString()
-            res3 = side1.text.toString().toDouble() * side2.text.toString().toDouble() / 2
+            res3 = round(side1.text.toString().toDouble() * side2.text.toString().toDouble() / 2 * 100) / 100
             result3.text =
                 if (res3.toInt().toDouble() == res3) res3.toInt().toString()
                 else res3.toString()
